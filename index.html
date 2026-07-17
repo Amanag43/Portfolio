@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aman Agarwal — Full Stack & Mobile Developer</title>
+<meta name="description" content="Aman Agarwal — React Native & full-stack developer. Builder of Ryde (ride-booking) and VitalSync (health monitoring platform).">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Aman Agarwal — Full Stack & Mobile Developer">
+<meta property="og:description" content="React Native & full-stack developer. Builder of Ryde (ride-booking) and VitalSync (health monitoring platform).">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Aman Agarwal — Full Stack & Mobile Developer">
+<meta name="twitter:description" content="React Native & full-stack developer. Builder of Ryde and VitalSync.">
+
+<!-- Favicon: teal signal-mark on transparent, matches the site's accent -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2314171C'/%3E%3Cpath d='M4 17h5l2-7 3 14 2.5-9 1.5 2h10' fill='none' stroke='%231F6F6B' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- NAV -->
+<header class="nav">
+  <a href="#top" class="nav-mark">AA</a>
+  <nav class="nav-links">
+    <a href="#work">Work</a>
+    <a href="#stack">Stack</a>
+    <a href="#about">About</a>
+    <a href="#github">GitHub</a>
+    <a href="#contact">Contact</a>
+  </nav>
+  <a href="#contact" class="nav-cta">Get in touch</a>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-status">
+      <span class="pulse-dot" aria-hidden="true"></span>
+      <span class="mono">OPEN TO INTERNSHIPS · 2026</span>
+    </div>
+
+    <h1 class="hero-title">
+      Aman Agarwal builds<br>
+      systems that track <span class="ink-underline">real&#8209;time signals</span> —<br>
+      routes, vitals, and everything between.
+    </h1>
+
+    <p class="hero-sub">
+      Final-year ECE student &amp; full-stack / React Native developer. I ship end-to-end
+      products — mobile app, backend, database, payments — not just prototypes.
+    </p>
+
+    <svg class="signal-line" viewBox="0 0 1000 120" preserveAspectRatio="none" aria-hidden="true">
+      <path id="signalPath" d="M0,60 L120,60 L145,20 L170,100 L195,60 L340,60 Q360,60 365,40 T385,60 L420,60 L440,20 L460,100 L480,60 L620,60 C 660,60 660,20 700,20 S 760,60 800,60 L1000,60" />
+    </svg>
+
+    <div class="hero-links">
+      <a href="mailto:agaman1518@gmail.com" class="btn btn-primary">agaman1518@gmail.com</a>
+      <a href="https://github.com/Amanag43" target="_blank" rel="noopener" class="btn btn-ghost">GitHub ↗</a>
+      <a href="https://linkedin.com/in/aman-agarwal" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn ↗</a>
+    </div>
+  </section>
+
+  <!-- STACK -->
+  <section class="stack" id="stack">
+    <div class="section-label mono">01 — STACK</div>
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h3 class="mono">Languages</h3>
+        <p>TypeScript, JavaScript, C / C++, SQL</p>
+      </div>
+      <div class="stack-group">
+        <h3 class="mono">Frameworks</h3>
+        <p>React Native (Expo), Node.js, Express, Razorpay, Google Maps SDK, Clerk</p>
+      </div>
+      <div class="stack-group">
+        <h3 class="mono">Data &amp; Cloud</h3>
+        <p>PostgreSQL (Neon), MongoDB, Firebase, AWS EC2</p>
+      </div>
+      <div class="stack-group">
+        <h3 class="mono">Tooling</h3>
+        <p>Git, Android Studio, Linux, JWT, REST, WebSockets, Postman</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="section-label mono">02 — SELECTED WORK</div>
+
+    <!-- Ryde -->
+    <article class="project">
+      <div class="project-head">
+        <h2>Ryde</h2>
+        <span class="mono project-date">Jan – Mar 2026</span>
+      </div>
+      <p class="project-tagline">Full-stack ride-booking mobile app — auth to payment, no separate backend server.</p>
+
+      <p class="project-desc">
+        A cross-platform ride-booking app covering the complete rider journey: authentication,
+        live map interaction, ride selection, fare estimation, and in-app payment. The backend
+        runs entirely on Expo Router's file-based API routes as serverless functions, executing
+        parameterized SQL against a PostgreSQL schema for users, drivers, and ride history —
+        no standalone server to manage.
+      </p>
+
+      <ul class="project-points">
+        <li>Integrated Google Maps SDK for real-time location tracking, route visualization, and pickup/drop selection</li>
+        <li>Built distance-based fare estimation across multiple ride-type tiers</li>
+        <li>Session-based authentication via Clerk; in-app transactions via Razorpay</li>
+        <li>Serverless backend on Expo Router API routes, querying NeonDB (Postgres)</li>
+      </ul>
+
+      <div class="project-stack mono">React Native · TypeScript · NeonDB · Razorpay · Google Maps SDK · Clerk · Expo Router</div>
+
+      <div class="project-extra">
+        <p class="project-extra-label mono">REQUEST FLOW — BOOKING A RIDE</p>
+        <div class="diagram-wrap">
+          <svg class="arch-diagram" viewBox="0 0 930 160" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ryde request flow: rider app to Clerk auth, Maps SDK, serverless API routes, NeonDB, and Razorpay payment"><defs>
+    <marker id="arrow-ryde" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="arch-arrowhead"/>
+    </marker>
+  </defs>
+  <g class="arch-node">
+    <rect x="10" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="26" cy="70" r="11" class="arch-badge"/>
+    <text x="26" y="74" class="arch-badge-num" text-anchor="middle">1</text>
+    <text x="75.0" y="101.0" class="arch-title" text-anchor="middle">Rider App</text>
+    <text x="75.0" y="119.0" class="arch-sub" text-anchor="middle">React Native · Expo</text>
+  </g>
+  <g class="arch-node">
+    <rect x="166" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="182" cy="70" r="11" class="arch-badge"/>
+    <text x="182" y="74" class="arch-badge-num" text-anchor="middle">2</text>
+    <text x="231.0" y="101.0" class="arch-title" text-anchor="middle">Clerk</text>
+    <text x="231.0" y="119.0" class="arch-sub" text-anchor="middle">Session auth</text>
+  </g>
+  <g class="arch-node">
+    <rect x="322" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="338" cy="70" r="11" class="arch-badge"/>
+    <text x="338" y="74" class="arch-badge-num" text-anchor="middle">3</text>
+    <text x="387.0" y="101.0" class="arch-title" text-anchor="middle">Maps SDK</text>
+    <text x="387.0" y="119.0" class="arch-sub" text-anchor="middle">Route + fare calc</text>
+  </g>
+  <g class="arch-node">
+    <rect x="478" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="494" cy="70" r="11" class="arch-badge"/>
+    <text x="494" y="74" class="arch-badge-num" text-anchor="middle">4</text>
+    <text x="543.0" y="101.0" class="arch-title" text-anchor="middle">API Routes</text>
+    <text x="543.0" y="119.0" class="arch-sub" text-anchor="middle">Expo Router · serverless</text>
+  </g>
+  <g class="arch-node">
+    <rect x="634" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="650" cy="70" r="11" class="arch-badge"/>
+    <text x="650" y="74" class="arch-badge-num" text-anchor="middle">5</text>
+    <text x="699.0" y="101.0" class="arch-title" text-anchor="middle">NeonDB</text>
+    <text x="699.0" y="119.0" class="arch-sub" text-anchor="middle">Postgres · param. SQL</text>
+  </g>
+  <g class="arch-node">
+    <rect x="790" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="806" cy="70" r="11" class="arch-badge"/>
+    <text x="806" y="74" class="arch-badge-num" text-anchor="middle">6</text>
+    <text x="855.0" y="101.0" class="arch-title" text-anchor="middle">Razorpay</text>
+    <text x="855.0" y="119.0" class="arch-sub" text-anchor="middle">Payment capture</text>
+  </g><line x1="140" y1="105.0" x2="166" y2="105.0" class="arch-arrow" marker-end="url(#arrow-ryde)"/><line x1="296" y1="105.0" x2="322" y2="105.0" class="arch-arrow" marker-end="url(#arrow-ryde)"/><line x1="452" y1="105.0" x2="478" y2="105.0" class="arch-arrow" marker-end="url(#arrow-ryde)"/><line x1="608" y1="105.0" x2="634" y2="105.0" class="arch-arrow" marker-end="url(#arrow-ryde)"/><line x1="764" y1="105.0" x2="790" y2="105.0" class="arch-arrow" marker-end="url(#arrow-ryde)"/></svg>
+        </div>
+
+        <button class="code-toggle" type="button" data-target="ryde-code" aria-expanded="false">
+          <span class="code-toggle-icon" aria-hidden="true">&gt;_</span>
+          View the actual API route <span class="mono code-toggle-path">app/(api)/ride/create+api.ts</span>
+        </button>
+        <div class="code-block" id="ryde-code" hidden>
+<pre><code><span class="tok-kw">import</span> { neon } <span class="tok-kw">from</span> <span class="tok-str">"@neondatabase/serverless"</span>;
+
+<span class="tok-kw">export async function</span> <span class="tok-fn">POST</span>(request: Request) {
+  <span class="tok-kw">try</span> {
+    <span class="tok-kw">const</span> body = <span class="tok-kw">await</span> request.<span class="tok-fn">json</span>();
+    <span class="tok-kw">const</span> {
+      origin_address, destination_address,
+      origin_latitude, origin_longitude,
+      destination_latitude, destination_longitude,
+      ride_time, fare_price, payment_status,
+      driver_id, user_id,
+    } = body;
+
+    <span class="tok-kw">if</span> (!origin_address || !destination_address || !fare_price || !user_id) {
+      <span class="tok-kw">return</span> Response.<span class="tok-fn">json</span>({ error: <span class="tok-str">"Missing required fields"</span> }, { status: <span class="tok-num">400</span> });
+    }
+
+    <span class="tok-kw">const</span> sql = <span class="tok-fn">neon</span>(<span class="tok-str">`${process.env.DATABASE_URL}`</span>);
+
+    <span class="tok-kw">const</span> response = <span class="tok-kw">await</span> sql<span class="tok-str">`
+      INSERT INTO rides (origin_address, destination_address, origin_latitude,
+        origin_longitude, destination_latitude, destination_longitude,
+        ride_time, fare_price, payment_status, driver_id, user_id)
+      VALUES (${origin_address}, ${destination_address}, ${origin_latitude},
+        ${origin_longitude}, ${destination_latitude}, ${destination_longitude},
+        ${ride_time}, ${fare_price}, ${payment_status}, ${driver_id}, ${user_id})
+      RETURNING *;
+    `</span>;
+
+    <span class="tok-kw">return</span> Response.<span class="tok-fn">json</span>({ data: response[<span class="tok-num">0</span>] }, { status: <span class="tok-num">201</span> });
+  } <span class="tok-kw">catch</span> (error) {
+    <span class="tok-kw">return</span> Response.<span class="tok-fn">json</span>({ error: <span class="tok-str">"Internal Server Error"</span> }, { status: <span class="tok-num">500</span> });
+  }
+}</code></pre>
+        </div>
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/Amanag43/Ryde" target="_blank" rel="noopener">View source ↗</a>
+      </div>
+    </article>
+
+    <!-- VitalSync -->
+    <article class="project">
+      <div class="project-head">
+        <h2>VitalSync</h2>
+        <span class="mono project-date">Apr 2026 – Present</span>
+      </div>
+      <p class="project-tagline">Real-time health monitoring &amp; intelligent emergency response platform.</p>
+
+      <p class="project-desc">
+        A full-stack React Native healthcare app that reads live vitals — heart rate, SpO2,
+        body temperature, respiratory rate, steps — directly from Android Health Connect,
+        syncing continuously to a Node.js / Express backend on MongoDB. A real-time alert
+        engine evaluates configurable thresholds, classifies abnormalities as Warning or
+        Critical, and triggers automated emergency workflows.
+      </p>
+
+      <ul class="project-points">
+        <li>Alert engine with cooldown logic to prevent duplicate incident triggers</li>
+        <li>Emergency response via OpenStreetMap, Overpass API &amp; OSRM — locates nearby hospitals, routes, and dispatches SOS with live location to emergency contacts</li>
+        <li>Secure REST APIs with Firebase Auth, emergency contact management, and historical vital storage</li>
+        <li>Real-time dashboard via WebSockets, state managed with Zustand</li>
+      </ul>
+
+      <div class="project-stack mono">React Native · Expo · Node.js · Express · MongoDB · Firebase Auth · Health Connect · WebSocket</div>
+
+      <div class="project-extra">
+        <p class="project-extra-label mono">DATA FLOW — VITAL READING TO EMERGENCY RESPONSE</p>
+        <div class="diagram-wrap">
+          <svg class="arch-diagram" viewBox="0 0 930 276" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="VitalSync data flow: Health Connect to React Native app, Express API, MongoDB, alert engine, emergency response, and live WebSocket dashboard"><defs>
+    <marker id="arrow-vs" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" class="arch-arrowhead"/>
+    </marker>
+  </defs>
+  <g class="arch-node">
+    <rect x="10" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="26" cy="70" r="11" class="arch-badge"/>
+    <text x="26" y="74" class="arch-badge-num" text-anchor="middle">1</text>
+    <text x="75.0" y="101.0" class="arch-title" text-anchor="middle">Health Connect</text>
+    <text x="75.0" y="119.0" class="arch-sub" text-anchor="middle">Reads HR, SpO2, RR, temp, steps</text>
+  </g>
+  <g class="arch-node">
+    <rect x="166" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="182" cy="70" r="11" class="arch-badge"/>
+    <text x="182" y="74" class="arch-badge-num" text-anchor="middle">2</text>
+    <text x="231.0" y="101.0" class="arch-title" text-anchor="middle">RN App</text>
+    <text x="231.0" y="119.0" class="arch-sub" text-anchor="middle">Syncs readings</text>
+  </g>
+  <g class="arch-node">
+    <rect x="322" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="338" cy="70" r="11" class="arch-badge"/>
+    <text x="338" y="74" class="arch-badge-num" text-anchor="middle">3</text>
+    <text x="387.0" y="101.0" class="arch-title" text-anchor="middle">Express API</text>
+    <text x="387.0" y="119.0" class="arch-sub" text-anchor="middle">Persists to MongoDB</text>
+  </g>
+  <g class="arch-node">
+    <rect x="478" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="494" cy="70" r="11" class="arch-badge"/>
+    <text x="494" y="74" class="arch-badge-num" text-anchor="middle">4</text>
+    <text x="543.0" y="101.0" class="arch-title" text-anchor="middle">Alert Engine</text>
+    <text x="543.0" y="119.0" class="arch-sub" text-anchor="middle">Thresholds + cooldown logic</text>
+  </g>
+  <g class="arch-node">
+    <rect x="634" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="650" cy="70" r="11" class="arch-badge"/>
+    <text x="650" y="74" class="arch-badge-num" text-anchor="middle">5</text>
+    <text x="699.0" y="101.0" class="arch-title" text-anchor="middle">Overpass + OSRM</text>
+    <text x="699.0" y="119.0" class="arch-sub" text-anchor="middle">Hospital lookup + route</text>
+  </g><line x1="140" y1="105.0" x2="166" y2="105.0" class="arch-arrow" marker-end="url(#arrow-vs)"/><line x1="296" y1="105.0" x2="322" y2="105.0" class="arch-arrow" marker-end="url(#arrow-vs)"/><line x1="452" y1="105.0" x2="478" y2="105.0" class="arch-arrow" marker-end="url(#arrow-vs)"/><line x1="608" y1="105.0" x2="634" y2="105.0" class="arch-arrow" marker-end="url(#arrow-vs)"/>
+  <g class="arch-node">
+    <rect x="790" y="70" width="130" height="70" rx="10" class="arch-box"/>
+    <circle cx="806" cy="70" r="11" class="arch-badge"/>
+    <text x="806" y="74" class="arch-badge-num" text-anchor="middle">6</text>
+    <text x="855.0" y="101.0" class="arch-title" text-anchor="middle">SOS Dispatch</text>
+    <text x="855.0" y="119.0" class="arch-sub" text-anchor="middle">Live location to contacts</text>
+  </g><line x1="764" y1="105.0" x2="790" y2="105.0" class="arch-arrow" marker-end="url(#arrow-vs)"/>
+  <g class="arch-node">
+    <rect x="322" y="186" width="130" height="70" rx="10" class="arch-box arch-box-branch"/>
+    <circle cx="338" cy="186" r="4" class="arch-badge-dot"/>
+    <text x="387.0" y="217.0" class="arch-title" text-anchor="middle">Live Dashboard</text>
+    <text x="387.0" y="235.0" class="arch-sub" text-anchor="middle">WebSocket updates</text>
+  </g><line x1="387.0" y1="140" x2="387.0" y2="186" class="arch-arrow arch-arrow-branch" marker-end="url(#arrow-vs)"/></svg>
+        </div>
+
+        <button class="code-toggle" type="button" data-target="vs-code" aria-expanded="false">
+          <span class="code-toggle-icon" aria-hidden="true">&gt;_</span>
+          View the actual permissions module <span class="mono code-toggle-path">src/services/healthConnect.js</span>
+        </button>
+        <div class="code-block" id="vs-code" hidden>
+<pre><code><span class="tok-kw">import</span> {
+  initialize, requestPermission, readRecords, getSdkStatus,
+} <span class="tok-kw">from</span> <span class="tok-str">"react-native-health-connect"</span>;
+<span class="tok-kw">import</span> { Platform } <span class="tok-kw">from</span> <span class="tok-str">"react-native"</span>;
+
+<span class="tok-kw">const</span> PERMISSIONS = [
+  { accessType: <span class="tok-str">"read"</span>, recordType: <span class="tok-str">"HeartRate"</span> },
+  { accessType: <span class="tok-str">"read"</span>, recordType: <span class="tok-str">"OxygenSaturation"</span> },
+  { accessType: <span class="tok-str">"read"</span>, recordType: <span class="tok-str">"RespiratoryRate"</span> },
+  { accessType: <span class="tok-str">"read"</span>, recordType: <span class="tok-str">"BodyTemperature"</span> },
+  { accessType: <span class="tok-str">"read"</span>, recordType: <span class="tok-str">"Steps"</span> },
+];
+
+<span class="tok-kw">export async function</span> <span class="tok-fn">initializeHealthConnect</span>() {
+  <span class="tok-kw">if</span> (Platform.OS !== <span class="tok-str">"android"</span>) <span class="tok-kw">return false</span>;
+
+  <span class="tok-kw">try</span> {
+    <span class="tok-kw">const</span> status = <span class="tok-kw">await</span> <span class="tok-fn">getSdkStatus</span>();
+
+    <span class="tok-kw">if</span> (status !== <span class="tok-num">3</span>) {
+      console.<span class="tok-fn">warn</span>(<span class="tok-str">"Health Connect unavailable"</span>);
+      <span class="tok-kw">return false</span>;
+    }
+
+    <span class="tok-kw">await</span> <span class="tok-fn">initialize</span>();
+    <span class="tok-kw">return true</span>;
+  } <span class="tok-kw">catch</span> (e) {
+    console.<span class="tok-fn">error</span>(<span class="tok-str">"Health Connect Init:"</span>, e);
+    <span class="tok-kw">return false</span>;
+  }
+}</code></pre>
+        </div>
+      </div>
+
+      <div class="project-links">
+        <a href="https://github.com/Amanag43/VitalSync" target="_blank" rel="noopener">View source ↗</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- ABOUT / CREDENTIALS -->
+  <section class="about" id="about">
+    <div class="section-label mono">03 — CREDENTIALS</div>
+
+    <div class="about-grid">
+      <div class="about-block">
+        <h3 class="mono">Education</h3>
+        <p class="about-primary">Maharaja Agrasen Institute of Technology</p>
+        <p class="about-secondary">B.Tech, Electronics &amp; Communication Engineering</p>
+        <p class="about-secondary mono">Aug 2023 – May 2027 · CGPA 7.75/10</p>
+      </div>
+
+      <div class="about-block">
+        <h3 class="mono">Certifications</h3>
+        <ul class="plain-list">
+          <li>Generative AI Fundamentals — Google Cloud Skills Boost, 2024</li>
+          <li>Agentic AI &amp; Autonomous Systems — IBM SkillsBuild, 2025</li>
+          <li>Android Mobile Application Development — Meta, 2025</li>
+          <li>Programming Fundamentals in Kotlin — Meta, 2025</li>
+          <li>Principles of UX/UI Design — Meta, 2025</li>
+          <li>Version Control — Meta, 2025</li>
+        </ul>
+      </div>
+
+      <div class="about-block">
+        <h3 class="mono">Hackathons</h3>
+        <ul class="plain-list">
+          <li><strong>Smart India Hackathon 2024</strong> — National level, Govt. of India initiative. Selected from thousands of applicants; prototyped a full-stack solution in a 36-hour sprint.</li>
+          <li><strong>Code X 2.0</strong> — Inter-college, 2025. Delivered a working prototype under time constraints in a competitive multi-college field.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- LIVE GITHUB -->
+  <section class="gh" id="github">
+    <div class="section-label mono">04 — LIVE FROM GITHUB</div>
+    <div class="gh-panel" id="ghPanel" aria-live="polite">
+      <div class="gh-loading mono" id="ghLoading">fetching github.com/Amanag43 …</div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="section-label mono">05 — CONTACT</div>
+    <h2 class="contact-title">Let's build something that ships.</h2>
+    <p class="contact-sub">Looking for mobile / full-stack internship roles. Reply within a day.</p>
+    <div class="contact-links">
+      <a href="mailto:agaman1518@gmail.com" class="btn btn-primary">Email me ↗</a>
+      <a href="https://github.com/Amanag43" target="_blank" rel="noopener" class="btn btn-ghost">GitHub</a>
+      <a href="https://linkedin.com/in/aman-agarwal" target="_blank" rel="noopener" class="btn btn-ghost">LinkedIn</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <span class="mono">© 2026 Aman Agarwal</span>
+  <span class="mono">Built with HTML, CSS &amp; a bit of JS</span>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
